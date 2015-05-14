@@ -1,0 +1,135 @@
+html{
+	width: 90%;
+	background:#FFE36B;
+}
+
+
+.erbody{
+	border-radius: 5px;
+	border: 5px solid #A1A635;
+	background-color: #BFC43F;
+}
+
+
+main{
+	display:block;
+	position: fixed;
+	width:1570px;
+	height: 190px;
+}
+
+
+main div{
+	display:block;
+
+	text-align:center;
+
+	
+}
+
+main div p:first-child {
+	font-family: Lucida Fax;
+	font-size: 50px;
+	color: #003399;
+	width: 98%;
+	text-align:center;
+	position: absolute;
+	
+}
+
+
+main div p:nth-child(2) {
+	font-family: Lucida Fax;
+	font-size: 25px;
+	color: #003399;
+	width: 98%;
+	text-align:center;
+	position: absolute;
+	top:80px;
+}
+
+main div p:nth-child(3) { 
+	font-family: Lucida Fax;
+	font-size: 30px;
+	color: #003399;
+	width: 98%;
+	text-align:center;
+	position: absolute;
+	top:115px;
+}
+
+main div div {
+	top;80px;
+	font-size: 15px;
+	width: 150px;
+	height: 20px;
+	margin-top:168px;
+	margin-left:15px;
+}
+
+
+
+article {
+	top: 220px;
+	height: 520px;
+	width: 770px;
+	border: 5px solid #418DCC;
+	background: #ABC3FF;
+	float:left;
+	text-align: center;
+	padding-top: 10px;
+	display: inline-block;
+	position: fixed;
+}
+
+article p:first-child{
+	font-family: Lucida Fax;
+	font-size: 50px;
+	color: #003399;
+	width:650px;
+	padding:0px;
+	position:absolute;
+	margin-top:-40px;
+}
+
+
+article dir{
+	font-size:35px;
+	width:200px;
+	display: inline-block;
+	float:left;
+	position:relative;
+}
+
+aside{
+	top: 220px;
+	left: 790px;
+	height: 520px;
+	width: 770px;
+	border: 5px solid #418DCC;
+	background: #ABC3FF;
+	float:right;
+	margin: 0px 10px 5px 5px;
+	text-align: center;
+	padding-top: 20px;
+	display: inline-block;
+	position: fixed;
+}
+aside p:first-child{
+	font-family: Lucida Fax;
+	font-size: 50px;
+	color: #003399;
+	width:650px;
+	padding:0px;
+	position:absolute;
+	margin-top:-40px;
+}
+
+
+aside dir{
+	font-size:35px;
+	width:200px;
+	display: inline-block;
+	float:left;
+	position:relative;
+}
