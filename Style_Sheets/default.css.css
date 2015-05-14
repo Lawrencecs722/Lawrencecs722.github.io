@@ -1,0 +1,159 @@
+body{
+position:fixed;
+}
+/*COMMENT*/
+/*Font Family Lucida Fax*/
+/*Font Family Tempus Sans ITC*/
+
+html{
+	background-color:#FFE36B;
+}
+
+
+.erbody{
+	border-radius: 5px;
+	border: 5px solid #408BC9;
+	background-color: #51B0FF;
+	}
+
+a:hover{
+	text-decoration: none;
+}
+
+
+/*  BEGIN HEADER AREA */
+header{
+	width:99%;
+	position: fixed;
+	display:inline-box;
+
+	height: 120px;	
+}
+
+header p:first-child{
+	position: absolute;
+	display: inline-block;
+	font-family:Lucida Fax;
+	font-size: 50px;
+	font-color: 418DCC;
+	width: 500px;
+	height: 55px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	left: 550px;	
+}
+
+header p:last-child{
+	font-color: 418DCC;
+	position: absolute;
+	display: inline-block;
+	display: block;
+	font-family:Tempus Sans ITC;
+	font-style: italic;
+	font-size: 25px;
+	width: 200px;
+	height: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	left: 700px;
+	top:60px;
+}
+
+/*  END HEADER AREA */
+
+/*  BEGIN PANEL AREA */
+.panels{
+	height:100%;
+	width: 100%;
+	dislplay: inline-block;
+	position: fixed;
+	top: 135px;
+}
+
+nav{
+	top: 5px;
+	height: 625px;
+	width: 400px;
+	border: 5px solid #418DCC;
+	background: #ABC3FF;
+	float:left;
+	margin: 5px 5px 5px 0px;
+	text-align: center;
+	padding-top: 20px;
+	display: inline-block;
+}
+div.innerbdr{
+	border: 2px solid #418DCC;
+	width: 250px;
+	background: #8A9ECF;
+	height: 130px;
+	display: relative;
+	margin-left:20px;
+}
+main{
+	top: 5px;
+	height: 625px;
+	width: 50%;
+	border: 5px solid #418DCC;
+	background: #ABC3FF;
+	float:left;
+	margin: 5px 10px 10px 5px;
+	text-align: center;
+	padding-top: 20px;
+	display: inline-block;
+}
+aside{
+	top: 5px;
+	height: 625px;
+	width: 380px;
+	border: 5px solid #418DCC;
+	background: #ABC3FF;
+	float:left;
+	margin: 0px 10px 5px 5px;
+	text-align: center;
+	padding-top: 20px;
+	display: inline-block;
+	position: relative;
+}
+
+article{
+	font-family:Tempus Sans ITC;
+	font-size: 30px;
+	text-align: left;
+}
+
+/*  END PANEL AREA */
+
+
+/*  BEGIN FOOTER AREA */
+
+footer{
+	display: block;	
+	width: 99%;
+	border-radius: 5px;
+	border: 5px solid #418DCC;
+	background-color: #ABC3FF;
+	height: 40px;
+	text-align: center;
+	margin-top:800px;
+	position: fixed;
+}
+/*  END FOOTER AREA */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
