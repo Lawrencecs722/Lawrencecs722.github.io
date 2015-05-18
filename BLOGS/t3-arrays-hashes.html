@@ -12,7 +12,7 @@
 	<div class="erbody">
 		<p>Technically Speaking</p>
 		<p>Learning by sharing what I've learned</p>
-		<p>**Title** Sunday, May 10th, 2015</p>
+		<p>** Container Classes: arrays and hashes ** Sunday, May 15th, 2015</p>
 		<div>
 		<a href="x">HOME</a> <a href="x">BLOG INDEX</a>
 		</div>
@@ -20,17 +20,29 @@
 </main>
   <article class="erbody">
 
-    <p>  
-      
-    </p>
+<p> In my short time working with the coding language Ruby I’ve come to appreciate storing information for later use in a format more convenient than having to prompt for the same type of data over and over again, or assign incalculable number of variables without mistakenly overwriting the data in a variable I’ve already defined.  That “more convenient” way to store that data is in an object referred to as a container object.  In brief a container object stores a list of information for easy retrieval.</p><br>
+ 
+<p>There are two specific types of container object commonly used in Ruby that have similarities and some useful differences. One of them is called an array, and the other is called a hash. In this brief discussion I’ll be describing what it is they do, how they do it, how they are similar, and how they are different.</p><br>
 
-    <p>
-        
-    </p>
+<p>Both arrays and hashes are ordered, collections of objects. The objects I’m talking about can be anything; an integer, a string, a Ruby object or even another array or hash. The objects within have an index position related to the order in which the object occurs within that array or hash. In both cases, information can be retrieved using that index number for reference. And in both cases, those indices first positions start with the number zero and increment by integer up to the last position in the array or hash. </p><br>
+ 
+<p>Example:  array = ["ruby", "diamond", "emerald"]
+ <p>          hash = { 0 => "ruby", 1 => "diamond", 2 => "emerald" }</p><br>
+  <p> <h6><em>In both cases, the value “ruby” is in the zero index position.</em></h6></p><br>
+ 
+  <p>You may notice that in the array, each element (a.k.a. object) is standing alone without an obvious index number.  In arrays, the first position is always the zero position, and each element that follows is an increment therefrom – it’s built-in functionality. Notice also, that this example shows each element in pairs for the hash.  Some things to know about this. One is that an array is always an ordered collection of objects based on a consistent, consecutive numerical index. The first object will always be index number zero (0), the second will be index number one (1) and so on.  The hash, however, stores its objects in pairs referred to as key/value pairs.  Each object therein is paired with a key that is unique within that hash.  The critical difference here is that in addition to knowing what position a given element is in, a hash can also be indexed and element data retrieved by means of that key.  Further, while the array is an “ordered” list, the key/value pairs do not actually need to be in any particular, consistent order.</p><br>
+ 
+<p>Each coder finds different use for each of these container objects, and the decision on which to use can be a very subjective decision. In broad strokes, each really can offer more appropriate qualification over the other for use in certain applications.</p><br>
+ 
+<p>You might use an array over a hash to store data that naturally comes in specific order.  The longitude and latitude of major cities is an example.  You might store the city, degrees, minutes and direction of longitude with the degrees, minutes and direction of latitude: </p><br>
 
-    <p>
-        
-    </p>
+<p> array (“Aberdeen, Scotland”, 57, 9, N, 2, 9, W)</p><br>
+
+<p>A hash might be better used for lists of things that don’t really have a natural order to them. An example might be something like a dinner guest list that features a name, food allergies, preferred beverage, and meal preference: </p><br>
+ 
+<p>Hash {name:”John Smith”, food_allergies:”peanuts”,beverage:”iced tea”,meal_pref:”vegan”} </p><br>
+ 
+<p> The differences aren’t all that striking on paper, but in coding those differences can make for <em>powerful</em> tools.</p>
 
   </article>
 
