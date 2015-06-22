@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>TechnicallySpeaking</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/Style_Sheets/blog-stylesheet.css.css">
+
+</head>
+
+<main>
+	<div class="erbody">
+		<p>Technically Speaking</p>
+		<p>Learning by sharing what I've learned</p>
+		<p>** Enumerable #map ** Sunday, May 24th, 2015</p>
+		<div>
+		<a href="x">HOME</a> <a href="x">BLOG INDEX</a>
+		</div>
+	</div>
+</main>
+  <article class="erbody">
+
+  <p>
+
+  </p><br>
+  <p>
+  Say you have a list. You want to make a new list based on that first list but with modification to each item in that list; just to be clear it’s the same modification for each item. You could write code to take the first item, change it, add it to the new list and do all of that for every item in the list. You’d hate life, but you could do it.  OR… you could use the enumerable #map to create that second list and do that modification to each item in the original list automatically.
+  </p><br>
+  <p> 
+  Now that I wrote that little gem I begin to understand why reference materials for coders all sound like Yoda writing instructions on how to put together an Ikea bookshelf.
+  </p><br>
+  <p> 
+  Okay let’s clean that up a bit.
+  </p><br>
+  <p> 
+  For demonstration’s sake, let’s say we’re working with a list of prices and you want to figure out what those prices would total out to with tax. Say 7.38%.  I want to maintain my original list unchanged but want my other list to have the price plus tax.  #map is a method used in Ruby. What it does is look into an array (a group of something), does something to each item in that array, then makes a new array out of the results. 
+  </p><br>
+  <p> 
+		You want this:              To give you this:<br>
+		     Item                     Item plus tax<br>
+		     8.98,                        9.64<br>
+		     10.99                       11.80<br>
+		     50.0                        53.69<br>
+		     12.52                       13.44<br>
+		     5.0                         5.37<br>
+  </p><br>
+  <p> 
+  We start with that first list, an array of numbers:
+  </p><br>
+  <p> 
+  array1 = [8.98, 10.99, 50.00, 12.52, 5.00]
+  </p><br>
+  <p> 
+  We want to create a second list, based on the first.
+  </p><br>
+  <p> 
+  array2 = array1
+  </p><br>
+  <p> 
+  But we want to actually have the second list calculate item plus tax on each item, and give us back each item in the new list.
+  </p><br>
+  <p>
+  array2 = array1.map{ |n| (n*1.0738).round(2)}
+  </p><br>
+  <p> 
+  So what’s going on there?  Let’s break down the statement a piece at a time.
+  </p><br>
+  <p>
+  “array2 = ” means create a new array setting it equal to this junk on the right.
+  </p><br>
+  <p>  
+  “array1.map”  means to look into array1 and put each value I find into array2
+                          after I do this stuff in the braces to my right.
+   </p><br>
+  <p>
+  “{“  The curly braces says to start following instructions that will apply to each item in array1.
+  </p><br>
+  <p>
+  “|n|” This is us telling map to use the letter n as a representation of each item in array1.
+  </p><br>
+  <p>
+  “(n*1.0738)” This tells map to multiple the item found by 1.0738…
+  </p><br>
+  <p>
+  “.round(2)”  … then round it to the nearest hundredth.
+  </p><br>
+  <p>
+  “}” The last curly brace indicates the end of the instruction.
+  </p><br>
+  <p>
+  In this particular setup, everything between the curly braces {} is done to every item in the array.
+  </p><br>
+  <p> 
+  One thing I need to point out. #map is what’s called a non-destructive method, which means it leaves the original thing it looked into completely unchanged.  You can see how array1 wasn’t changed in the example shown below, and what the result was of using #map (plus the instructions for figuring tax) returned.
+  </p><br>
+  <p> 
+  array1 = [8.98, 10.99, 50.00, 12.52, 5.00]
+  </p><br>
+  <p> 
+  array2 = array1.map{ |n| (n*1.0738).round(2)}
+  </p><br>
+  <p> 
+  p array1 # => returns the original array [8.98, 10.99, 50.00, 12.52, 5.00]
+  </p><br>
+  <p> 
+  p array2 #=> returns the new array with the adjustments [9.16, 11.21, 51.0, 12.77, 11.21]
+  </p>
+
+  </article>
+
+</html>
